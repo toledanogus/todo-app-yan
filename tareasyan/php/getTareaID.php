@@ -6,8 +6,11 @@ $x = json_decode($json_data);
 
 /* mysqli_query($conn, "INSERT INTO tareasgus (titulo, descripcion, prioridad, categoria, completada, fechalimite) VALUES ('".$x->title."', '".$x->description."', '".$x->priority."', '".$x->category."', 0, '".$x->limitDate."')"); */
 
-$respuesta = mysqli_query($conn, "SELECT titulo, descripcion, prioridad, completada, fechalimite, categoria, id FROM tareasyan WHERE id = '".$x->tareaID."'");
-
+if ($x->filter === 'juntos') {
+    $respuesta = mysqli_query($conn, "SELECT titulo, descripcion, prioridad, completada, fechalimite, categoria, id FROM tareasjuntos WHERE id = '".$x->tareaID."'");
+}else{
+    $respuesta = mysqli_query($conn, "SELECT titulo, descripcion, prioridad, completada, fechalimite, categoria, id FROM tareasyan WHERE id = '".$x->tareaID."'");
+}
 
 $row = mysqli_fetch_all($respuesta);
 //echo $row;
