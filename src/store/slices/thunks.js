@@ -31,9 +31,10 @@ export const getTareas = () => async (dispatch, getState) => {
 export const getTarea = () => async (dispatch, getState) => {
     const state = getState();
     const tareaID = state.tarea.tareaID;
-
+    const filtro = state.tarea.filtro;
     const jsonFiltro = new Object();
     jsonFiltro['tareaID'] = tareaID;
+    jsonFiltro['filter'] = filtro;
 
     const {data} = await tareaApi.post (`/getTareaID.php`, jsonFiltro);
     dispatch(setTarea({tarea: data}));
@@ -43,9 +44,11 @@ export const getTarea = () => async (dispatch, getState) => {
 export const deleteTarea = () => async (dispatch, getState) => {
     const state = getState();
     const tareaID = state.tarea.tareaID;
+    const filtro = state.tarea.filtro;
 
     const jsonFiltro = new Object();
     jsonFiltro['tareaID'] = tareaID;
+    jsonFiltro['filter'] = filtro;
 
     const {data} = await tareaApi.post (`/borrarTarea.php`, jsonFiltro);
     
@@ -55,6 +58,7 @@ export const editTarea = () => async (dispatch, getState) => {
     const state = getState();
     const tareaID = state.tarea.tareaID;
     const tareaEditada = state.tarea.tareaEditada;
+    const filtro = state.tarea.filtro;
 
     const jsonEditada = new Object();
     jsonEditada['tareaID'] = tareaID;
@@ -62,6 +66,7 @@ export const editTarea = () => async (dispatch, getState) => {
     jsonEditada['description'] = tareaEditada[1];
     jsonEditada['priority'] = tareaEditada[2];
     jsonEditada['fecha'] = tareaEditada[3];
+    jsonEditada['filter'] = filtro;
 
     const {data} = await tareaApi.post (`/editarTarea.php`, jsonEditada);
 };
@@ -69,9 +74,11 @@ export const editTarea = () => async (dispatch, getState) => {
 export const sendSolved = () => async (dispatch, getState) => {
     const state = getState();
     const solved = state.tarea.solved;
+    const filtro = state.tarea.filtro;
 
     const jsonSolved = new Object();
     jsonSolved['solved'] = solved;
+    jsonSolved['filter'] = filtro;
     const {data} = await tareaApi.post (`/enviarResueltas.php`, jsonSolved);
     
 };
