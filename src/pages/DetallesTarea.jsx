@@ -167,22 +167,28 @@ export const DetallesTarea = () => {
                 <legend>Categoría</legend>
                 {elemento[5]}
               </fieldset>
-              <button className="registrar" onClick={() => editar(elemento[6])}>
-                Editar
-              </button>
-              <button className="aInicio" onClick={() => borrar(elemento[6])}>
-                Borrar
-              </button>
-              <button
-                onClick={() => {
-                  enviarResueltas().then(() => dispatch(getTarea()));
-                }}
-              >
-                Registrar tareas completadas
-              </button>
-              <button onClick={aInicio} className="aInicio">
-                Inicio
-              </button>
+
+              <div className="botonesPar">
+                <button
+                  className="iz2"
+                  onClick={() => {
+                    enviarResueltas().then(() => dispatch(getTarea()));
+                  }}
+                >
+                  Registrar tareas completadas
+                </button>
+                <button onClick={aInicio} className="der2">
+                  Inicio
+                </button>
+              </div>
+              <div className="botonesPar">
+                <button className="iz1" onClick={() => editar(elemento[6])}>
+                  Editar
+                </button>
+                <button className="der1" onClick={() => borrar(elemento[6])}>
+                  Borrar
+                </button>
+              </div>
             </div>
           );
         })}

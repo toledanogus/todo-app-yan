@@ -81,7 +81,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
-          <div className="icono"><img className="iconito" src={l9} alt="" /></div>
+          <div className="icono"><img className="iconito" src={l15} alt="" /></div>
           Casa
         </div>
       </div>

@@ -35,8 +35,8 @@ export const ListaTareas = () => {
       <div className="contenedorx">
         <table>
           <thead>
-            <th className="vacio"></th>
-            <th>Tarea</th>
+            {/* <th className="vacio"></th> */}
+            <th colSpan="2">Tarea</th>
             <th>Completada</th>
           </thead>
 
