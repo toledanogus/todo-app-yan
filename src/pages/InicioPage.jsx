@@ -21,6 +21,10 @@ import l17 from "../assets/iconos2/17.png";
 import l18 from "../assets/iconos2/18.png";
 import l19 from "../assets/iconos2/19.png";
 import l20 from "../assets/iconos2/20.png";
+import l21 from "../assets/iconos2/21.png";
+import l22 from "../assets/iconos2/22.png";
+import l23 from "../assets/iconos2/23.png";
+import l24 from "../assets/iconos2/24.png";
 
 
 
@@ -81,7 +85,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
-          <div className="icono"><img className="iconito" src={l15} alt="" /></div>
+          <div className="icono"><img className="iconito" src={l21} alt="" /></div>
           Casa
         </div>
       </div>
@@ -95,7 +99,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
-          <div className="icono"><img className="iconito" src={l2} alt="" /></div>
+          <div className="icono"><img className="iconito" src={l24} alt="" /></div>
           Personal
         </div>
 
@@ -130,7 +134,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
-          <div className="icono"><img className="iconito" src={l18} alt="" /></div>
+          <div className="icono"><img className="iconito" src={l8} alt="" /></div>
           Tesis
         </div>
 
@@ -151,7 +155,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
-          <div className="icono"><img className="iconito" src={l1} alt="" /></div>
+          <div className="icono"><img className="iconito" src={l23} alt="" /></div>
           YG
         </div>
       </div>
