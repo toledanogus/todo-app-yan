@@ -1,6 +1,27 @@
 import { useDispatch } from "react-redux";
 import { setFiltro } from "../store/slices/tareaSlice";
 import { useNavigate } from "react-router-dom";
+import l1 from "../assets/iconos2/1.png";
+import l2 from "../assets/iconos2/2.png";
+import l3 from "../assets/iconos2/3.png";
+import l4 from "../assets/iconos2/4.png";
+import l5 from "../assets/iconos2/5.png";
+import l6 from "../assets/iconos2/6.png";
+import l7 from "../assets/iconos2/7.png";
+import l8 from "../assets/iconos2/8.png";
+import l9 from "../assets/iconos2/9.png";
+import l10 from "../assets/iconos2/10.png";
+import l11 from "../assets/iconos2/11.png";
+import l12 from "../assets/iconos2/12.png";
+import l13 from "../assets/iconos2/13.png";
+import l14 from "../assets/iconos2/14.png";
+import l15 from "../assets/iconos2/15.png";
+import l16 from "../assets/iconos2/16.png";
+import l17 from "../assets/iconos2/17.png";
+import l18 from "../assets/iconos2/18.png";
+import l19 from "../assets/iconos2/19.png";
+import l20 from "../assets/iconos2/20.png";
+
 
 
 export const InicioPage = () => {
@@ -22,8 +43,11 @@ export const InicioPage = () => {
 
   return (
     <>
-      <h1>Gestión de Pendientes</h1>
+      <h1 className="tituloInicio">Gestión de Pendientes</h1>
+
+
       <div className="containerInicio">
+        
         <div
           className="todas"
           colSpan="4"
@@ -32,8 +56,12 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l7} alt="" /></div>
           Todas
         </div>
+
+
+
         <div
           className="escuela"
           colSpan="4"
@@ -42,6 +70,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l5} alt="" /></div>
           Escuela
         </div>
         <div
@@ -52,6 +81,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l9} alt="" /></div>
           Casa
         </div>
       </div>
@@ -65,6 +95,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l2} alt="" /></div>
           Personal
         </div>
 
@@ -75,6 +106,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l20} alt="" /></div>
           Salud
         </div>
         <div
@@ -84,6 +116,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l11} alt="" /></div>
           Diversión
         </div>
       </div>
@@ -97,6 +130,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l18} alt="" /></div>
           Tesis
         </div>
 
@@ -107,6 +141,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l17} alt="" /></div>
           Familia
         </div>
         <div
@@ -116,6 +151,7 @@ export const InicioPage = () => {
             aListaDeTareas(nuevoFiltro);
           }}
         >
+          <div className="icono"><img className="iconito" src={l1} alt="" /></div>
           YG
         </div>
       </div>

@@ -41,6 +41,7 @@ div.personal, div.todas, div.casa, div.diversion, div.tesis, div.juntos{
   align-items:center;
   border: 3px solid #DEDEDD;
   font-family: 'Gus';
+  flex-direction: column;
 }
 
 div.escuela, div.salud, div.familia {
@@ -54,6 +55,11 @@ div.escuela, div.salud, div.familia {
   align-items:center;
   border: 3px solid #DEDEDD;
   font-family: 'Gus';
+  flex-direction: column;
+}
+
+.icono{
+  text-align: center;
 }
 
 button{
@@ -150,6 +156,9 @@ img {
   width: 18px;
 }
 
+.iconito{
+  width: 40px;
+}
 .vacio{
   background-color:#dededd00;
   border: none;
@@ -210,7 +219,10 @@ h2{
   width: 97%;
 }
 
-
+.tituloInicio{
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
 
 
