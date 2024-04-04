@@ -108,7 +108,7 @@ export const NuevaTareaPage = () => {
             </li>
             <li className="tarea">
               <label>Fecha límite:</label>
-              <input type="date" onChange={onHandleChange3} />
+              <input type="date" value={selection3} onChange={onHandleChange3} />
             </li>
           </ul>
         </div>
